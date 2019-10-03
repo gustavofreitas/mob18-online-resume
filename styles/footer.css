@@ -1,0 +1,18 @@
+.footer {
+    height: 100px;
+    background-color: lightgray;
+    text-align: center;
+    position:fixed;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.footer .footer__social li {
+    display: inline-block;
+}
+
+.footer .footer__social li img {
+    width: 25px;
+}
+
+

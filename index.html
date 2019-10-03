@@ -1,0 +1,49 @@
+<html lang="pt_br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="./styles/style.css" rel="stylesheet" />
+        <title>Teste</title>
+    </head>
+    
+    <body onload="load();">
+        <header role="header" class="header">
+            <img src="header-logo-android.png"/>
+            <h1>Gustavo</h1>
+            <nav>
+                <a href="" >Sobre</a>
+                <a href="" >Nós</a>
+            </nav>
+        </header>
+        <main role="main" class="main">
+            
+            <button class="main__button main__intro">Introduction</button>
+            <button class="main__button main__desc">Description</button>
+            <button class="main__button main__hobby">Hobby</button>
+
+            <section class="main__display">
+                <p class="main__display__paragraph main__display__intro main__display__paragraph--hidden">
+                    Introduction
+                </p> 
+                <p class="main__display__paragraph main__display__desc main__display__paragraph--hidden">
+                    Description
+                </p>
+                <p class="main__display__paragraph main__display__hobby main__display__paragraph--hidden">
+                    Hobby
+                </p>
+            </section>
+
+
+        </main>
+        <footer role="footer" class="footer">
+            <ul class="footer__social">
+                <li><img src="ico_facebook.png" alt="" srcset=""> Facebook</li>
+                <li><img src="ico_twitter.png" alt="" srcset=""> Twitter</li>
+            </ul>
+            <button class="btn__back-to-top">Back to Top</button>
+        </footer>
+    </body>
+    <script src="./load.js" ></script>
+    <script src="./BackToTop.js" ></script>
+    <script src="./DisplayControl.js" ></script>
+</html>
