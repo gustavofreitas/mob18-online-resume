@@ -16,9 +16,9 @@ class DisplayControl {
 
         button.addEventListener(
             'click',
-            function(){
-                diplayControl.clearAll(activeClassName, hiddenClassName)
-                diplayControl.setNewState(button, paragraph, activeClassName, hiddenClassName)
+            ()=>{
+                this.clearAll(activeClassName, hiddenClassName),
+                this.setNewState(button, paragraph, activeClassName, hiddenClassName)
             }
         );
     }

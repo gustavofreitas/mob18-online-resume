@@ -1,5 +1,6 @@
 .main {
     padding-bottom: 100px;
+    padding-left: 16px;
 }
 
 .main .main__button{
@@ -7,7 +8,6 @@
 }
 .main__display *{
     margin-top: 32px;
-    margin-left: 16px;
 }
 
 .main__button--active {
@@ -17,4 +17,41 @@
 
 .main__display__paragraph--hidden {
     display: none;
+}
+
+.main form {
+
+}
+
+.main form div div > * {
+    display: block;
+}
+
+.main form div button {
+    display: block;
+    margin-top: 32px;
+    float: right;;
+}
+
+.main form div div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main form div {
+    display: inline-block;
+}
+
+.main .skill-show .skill {
+    height: 35px;
+    width: 150px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 1px;
+} 
+
+.main .skill-show .skill .skill-item {
+    width: 1%;
+    height: 100%;
+    background-color: red;
 }
