@@ -1,11 +1,48 @@
 .main {
-    padding-bottom: 100px;
-    padding-left: 16px;
+    padding: 16px 16px 100px;
+}
+
+.main__section {
+    padding: 16px;
+    background-color: yellowgreen;
+    border-bottom: 2px solid #000;
+}
+
+.main__section:not(:first-of-type) {
+    margin-top: 16px
+}
+
+.main__section:last-of-type {
+    margin-bottom: 16px;
+}
+
+.section__form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.section__form > button{
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.form__container {
+    flex: 1 1 auto;
+    flex-direction: column;
+    vertical-align: top;
+    width: 50%;
+}
+
+.container__element{
+    display: block;
+    width: 100%;
 }
 
 .main .main__button{
     margin-left: 16px;
 }
+
 .main__display *{
     margin-top: 32px;
 }
@@ -19,32 +56,9 @@
     display: none;
 }
 
-.main form {
-
-}
-
-.main form div div > * {
-    display: block;
-}
-
-.main form div button {
-    display: block;
-    margin-top: 32px;
-    float: right;;
-}
-
-.main form div div {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.main form div {
-    display: inline-block;
-}
-
 .main .skill-show .skill {
     height: 35px;
-    width: 150px;
+    width: 500px;
     border: 1px solid #000;
     background-color: #fff;
     padding: 1px;

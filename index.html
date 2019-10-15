@@ -1,22 +1,52 @@
 <html lang="pt_br">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="./styles/style.css" rel="stylesheet" />
-        <title>Teste</title>
-    </head>
-    
-    <body onload="load();">
-        <header role="header" class="header">
-            <img src="header-logo-android.png"/>
-            <h1>Gustavo</h1>
-            <nav>
-                <a href="" >Sobre</a>
-                <a href="" >Nós</a>
-            </nav>
-        </header>
-        <main role="main" class="main">
-            
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./styles/style.css" rel="stylesheet" />
+    <title>Teste</title>
+</head>
+
+<body onload="load();">
+    <header role="header" class="header">
+        <img src="header-logo-android.png" />
+        <h1>Gustavo</h1>
+        <nav>
+            <a href="">Sobre</a>
+            <a href="">Nós</a>
+        </nav>
+    </header>
+    <main role="main" class="main">
+
+        <section class="main__section">
+            <h1>Resume</h1>
+        </section>
+
+        <section class="main__section">
+            <h1>Skill</h1>
+        </section>
+
+        <section class="main__section">
+            <h1>Contact</h1>
+            <form class="section__form">
+                <div class="form__container">
+                    <label for="name" class="container__element">Name: </label>
+                    <input type="text" name="name" id="name" class="container__element" />
+                    <label for="subject" class="container__element">Subject: </label>
+                    <input type="text" name="subject" id="subject" class="container__element" />
+                    <label for="email" class="container__element">E-mail: </label>
+                    <input type="text" name="email" id="email" class="container__element" />
+                </div>
+                <div class="form__container">
+                    <label for="message" class="container__element">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="6" class="container__element" ></textarea>
+                </div>
+                <div class="form__container">
+                    <button type="button" onclick="send(this);">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <!--
             <button class="main__button main__intro">Introduction</button>
             <button class="main__button main__desc">Description</button>
             <button class="main__button main__hobby">Hobby</button>
@@ -33,25 +63,6 @@
                 </p>
             </section>
 
-            <form>
-                <div>
-                    <div>
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" id="name" class="field"/>
-                        <label for="subject">Subject: </label>
-                        <input type="text" name="subject" id="subject" class="field"/>
-                        <label for="email">E-mail: </label>
-                        <input type="text" name="email" id="email" class="field"/>
-                    </div>
-                    <div>
-                        <label for="message">Message: </label>
-                        <textarea name="message" id="message" cols="30" rows="6" class="field"></textarea>
-                    </div>
-                    <br />
-                    <button type="button" onclick="send(this);">Enviar</button>
-                </div>
-            </form>
-
             <section class="skill-show">
                 <label>Coding: </label>
                 <div class="skill coding">
@@ -66,19 +77,19 @@
                     <div class="skill-item"></div>
                 </div>
             </section>
+-->
+    </main>
+    <footer role="footer" class="footer">
+        <ul class="footer__social">
+            <li><img src="ico_facebook.png" alt="" srcset=""> Facebook</li>
+            <li><img src="ico_twitter.png" alt="" srcset=""> Twitter</li>
+        </ul>
+        <button class="btn__back-to-top">Back to Top</button>
+    </footer>
+</body>
+<script src="./load.js"></script>
+<script src="./BackToTop.js"></script>
+<script src="./DisplayControl.js"></script>
+<script src="./SkillBar.js"></script>
 
-
-        </main>
-        <footer role="footer" class="footer">
-            <ul class="footer__social">
-                <li><img src="ico_facebook.png" alt="" srcset=""> Facebook</li>
-                <li><img src="ico_twitter.png" alt="" srcset=""> Twitter</li>
-            </ul>
-            <button class="btn__back-to-top">Back to Top</button>
-        </footer>
-    </body>
-    <script src="./load.js" ></script>
-    <script src="./BackToTop.js" ></script>
-    <script src="./DisplayControl.js" ></script>
-    <script src="./SkillBar.js" ></script>
 </html>
