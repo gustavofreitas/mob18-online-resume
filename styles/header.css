@@ -1,27 +1,98 @@
 .header {
-    background-color: red;
-    height: 200px;
+    background-color: #4a148c;
+    color:#fff;
+    height: 75px;
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    top: 0px;
+    left: 0px;
+   
 }
 
 .header img {
-    margin-top: 70px;
-    margin-left: 20px;
     width: 75px;
 }
 
 .header h1 {
-    background-color: aqua;
     display: inline-block;
 }   
 
-.header nav {
-    float: right;
-    margin-right: 20px;
-    background-color: blue;
-    margin-top: 84px;
-    line-height: 16px;
+.header__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 32px;
+    margin-top: 28px;
+    
+ }
+
+.menu__item a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.header nav li {
-    display: inline-block; 
+.navigation__hamburger,
+#hamburger {
+    display: none;
+}
+
+.navigation__menu {
+    list-style-type: none;
+}
+.menu__item {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px){
+
+    .header img {
+        display: none;
+    }
+
+    .navigation__hamburger {
+        display: inline-block;
+        color: #fff;
+        font-style: normal;
+        font-size: 32px;
+        padding: 10px;
+        
+    }
+
+    .header__navigation{
+        flex-direction: column;
+        overflow: visible;
+        width: 100%;
+        position: fixed;
+    }
+
+    .menu__item {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation__menu {
+        display: none;
+        width: 100%;
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+        background-color: #7c43bd;
+        position: sticky;
+        border-radius: 5px;
+    }
+
+    #hamburger:checked ~ .navigation__menu {
+        display: block;
+        
+      }
 }

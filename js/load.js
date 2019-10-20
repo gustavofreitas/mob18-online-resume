@@ -1,9 +1,21 @@
 const load = () => {
-    const backToTop = new BackToTop(); 
-    const displayControl = new DisplayControl();  
     const skillBar = new SkillBar();
-
+    const backToTop = new BackToTop(); 
+    const displayControl = new DisplayControl(); 
     
+    init()
+}
+
+function init() {
+    document.querySelectorAll('.menu__item').forEach((item, index) => {
+        item.addEventListener(
+            'click',
+            () => {
+                document.getElementById('hamburger').checked = false;
+                window.scroll.BackToTop();
+            }
+        )
+    });
 }
 
 
@@ -33,10 +45,15 @@ async function send() {
             {
             method: 'POST',
             body: JSON.stringify(msg),
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json,text/*;q=0.99'
+            }
             }
 
         );
         console.log(data);
+        
     } catch (err){
         console.log(err);
     }

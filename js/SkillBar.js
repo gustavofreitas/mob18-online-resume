@@ -1,7 +1,7 @@
 class SkillBar {
     constructor(){
 
-        const coding = document.querySelector(".skill");
+        const coding = document.querySelector(".coding");
         const social = document.querySelector(".social");
         const kotlin = document.querySelector(".kotlin");
 
@@ -13,7 +13,7 @@ class SkillBar {
 
     start(element, percent){
 
-        const skillElement = element.querySelector(".skill-item");
+        const skillElement = element.querySelector(".skill__bar");
         const target = this.getFinal((this.getSize(element) - this.getPaddingAdjust(element)), percent);
         
         var interval = setInterval(() => {

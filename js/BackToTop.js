@@ -1,6 +1,6 @@
 class BackToTop {
     constructor() {
-        this.element = document.querySelector('.footer .btn__back-to-top');
+        this.element = document.querySelector('.footer__button');
         
         this.element.addEventListener(
             'click', 
@@ -10,13 +10,11 @@ class BackToTop {
     }
 
     handleClick(_instance, event){
-        //scrollToTop(document.body, 0, 200)
-        
         var interval = setInterval(() => {
             if(window.scrollY == 0)
                 clearInterval(interval)
             
-            window.scrollTo(0, window.scrollY - 1000)
+            window.scrollTo(0, window.scrollY - 10)
             console.log("Executou!")
         }, 10);
         

@@ -1,18 +1,29 @@
 .footer {
     height: 100px;
-    background-color: lightgray;
+    background-color: #12005e;
+    color:#fff;
     text-align: center;
-    position:fixed;
     width: 100%;
-    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding:16px;
 }
 
-.footer .footer__social li {
-    display: inline-block;
+.footer__social {
+    margin-right: 32px;
+}
+
+.social__link {
+    color: #fff;
+    text-decoration:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .footer .footer__social li img {
     width: 25px;
+    height: 25px;
 }
 
 
